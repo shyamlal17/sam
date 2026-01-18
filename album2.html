@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="album123456.css">
+</head>
+<body>
+
+<h2 class="title">My Photo Album</h2>
+
+<div class="gallery">
+    <img src="/Album1/9.jpg" onclick="openImage(this)">
+    <img src="/Album1/10.jpg" onclick="openImage(this)">
+    <img src="Album1/11.jpg" onclick="openImage(this)">
+    <img src="Album1/12.jpg" onclick="openImage(this)">
+    <img src="Album1/13.jpg" onclick="openImage(this)">
+    <img src="Album1/14.jpg" onclick="openImage(this)">
+       <img src="Album1/15.jpg" onclick="openImage(this)">
+   <img src="Album1/16.jpg" onclick="openImage(this)">
+</div>
+
+<!-- Image Popup -->
+<div class="popup" id="popup">
+    <span class="close" onclick="closeImage()">×</span>
+    <img id="popupImg">
+</div>
+
+<script src="album123456.js"></script>
+</body>
+</html>

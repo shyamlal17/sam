@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0e0e0e;
+  color: #fff;
+  text-align: center;
+}
+
+.title {
+  margin: 20px 0;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+/* Gallery grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+  padding: 15px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Popup overlay */
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Big image */
+.popup img {
+  max-width: 95%;
+  max-height: 85%;
+  border-radius: 12px;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  font-size: 36px;
+  cursor: pointer;
+  color: #fff;
+}

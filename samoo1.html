@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SAMOO Gallery</title>
+<link rel="stylesheet" href="samoo1.css">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+    <span class="menu-icon" onclick="toggleMenu()">☰</span>
+    <h2>SAMOO</h2>
+</div>
+
+<!-- Side Menu -->
+<div id="menu" class="menu">
+    <p onclick="showHome()">Profile</p>
+    <p onclick="email()">Email </p>
+    <p onclick="instagram()">Instagram</p>
+    <p onclick="call()">Call</p>
+    <p onclick="larning()">Larning</p>
+    <p onclick="admit()">Admit Card</p>
+    <p onclick="what()">What's up</p>
+    
+    
+    <p onclick="facebook()">Facebook</p>
+    <p onclick="tiktok()">TikTok</p>
+    <p onclick="about()">About </p>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+    <!-- Albums -->
+    <div id="home" class="page active">
+        <div class="album" onclick="album1()"> Hare Krishna </div>
+        <div class="album" onclick="album2()">Album 2</div>
+        <div class="album" onclick="album3()">Album 3</div>
+        <div class="album" onclick="album4()">Album 4</div>
+        <div class="album" onclick="album5()">Album 5</div>
+        <div class="album" onclick="album6()">Album 6</div>
+         
+    </div>
+
+    
+
+</div>
+
+<!-- Image Modal -->
+<div id="modal" onclick="closeModal()">
+    <img id="modalImg">
+</div>
+
+<script src="samoo1.js"></script>
+</body>
+</html>

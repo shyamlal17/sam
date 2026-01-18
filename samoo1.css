@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: skyblue;
+}
+
+/* Top bar */
+.topbar {
+  height: 55px;
+  background: #1e1e2f;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+/* Menu */
+.menu {
+  position: fixed;
+  top: 55px;
+  left: -220px;
+  width: 200px;
+  background: #2b2b44;
+  height: 100%;
+  color: white;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.menu p {
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.menu p:hover {
+  color: #00d4ff;
+}
+
+/* Main */
+.main {
+  padding: 20px;
+}
+
+/* Pages */
+.page {
+  display: none;
+}
+
+.page.active {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Album */
+.album {
+  height: 120px;
+  background-color: slategray;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.album img{
+  height: 100%;
+  width: 100%;
+}
+.album:hover {
+  background: #00d4ff;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* Photos */
+.photos {
+  display: flex;
+  gap: 15px;
+}
+
+.photos img {
+  width: 200px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Modal */
+#modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+#modal img {
+  max-width: 85%;
+  max-height: 85%;
+  border-radius: 10px;
+}
