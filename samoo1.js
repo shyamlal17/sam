@@ -75,3 +75,6 @@ function album1(){
 function album2(){
   window.open("album2.html")
 }
+function album2(){
+  window.open("album3.html")
+}
