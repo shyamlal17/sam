@@ -69,12 +69,12 @@ function admit() {
     window.open(href="https://wa.me/01718439315")
   
 //}
-function album6(){
-  window.open(href="album1.html")
+function album1(){
+  window.open("album3.html")
 }
 function album5(){
   window.open("album2.html")
 }
-function album1(){
-  window.open("album3.html")
+function album6(){
+  window.open("album1.html")
 }
